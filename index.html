@@ -36,6 +36,22 @@
 
       }
     </style>
+	  <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+
 <!--
 
 TemplateMo 568 DigiMedia
@@ -542,25 +558,13 @@ https://templatemo.com/tm-568-digimedia
                         </div>
                       </div>
                     </div>
-		<form id="myForm">
-                    <div class="col-lg-6">
-                
-                        <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                     
-                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                      
-                        <input type="number" name="mobileno" id="mobileno" placeholder="Your Mobile No" autocomplete="on">
-                   
-                    </div>
-                    <div class="col-lg-6">
-                    
-                        <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                      
-                    </div>
-                    <div class="col-lg-12">
-                      
-                        <button type="submit" class="main-button" onclick="SubForm()" >Send Message Now</button>
-                </form>
+			<form id="myForm">
+                        <input  type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+			<input type="number" id="mobileno" name="mobileno" placeholder="Your Mobile No" required>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        <button type="submit"  class="btn btn3" onclick='SubForm()'>submit</button>
+                    	</form>
                     </div>
                   </div>
                 </div>
