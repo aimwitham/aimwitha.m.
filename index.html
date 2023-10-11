@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script
-		src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-		crossorigin="anonymous"></script>
-
 
     <title>Aim With A.M.-Trainning Agency</title>
 
@@ -37,7 +32,11 @@
 
       }
     </style>
-	  	<script>
+	    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
 		function SubForm (){
 			$.ajax({
 				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
@@ -609,29 +608,6 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script>
-    function sendmsg(){
-      var name = document.getElementById('name');
-  var email = document.getElementById('email');
-  var number = document.getElementById('number');
-  var message = document.getElementById('message');
-  let name1 = name.value;
-  let email1 = email.value;
-  let number1 = number.value;
-  let message1 = message.value;
-  console.log(name1);
-  const fs = require('fs')
-      
-    // Data which will write in a file.
-      
-    // Write data in 'Output.txt' .
-    fs.writeFile('user.txt', name1, (err) => {
-          
-        // In case of a error throw err.
-        if (err) throw err;
-    })
-  }
-  </script>
 
 </body>
 </html>
