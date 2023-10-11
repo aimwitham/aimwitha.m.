@@ -26,6 +26,21 @@
     <link rel="stylesheet" href="assets/css/templatemo-digimedia-v1.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
+	  <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
     <style>
       .btn1{
         margin-top: 10px;
@@ -558,13 +573,13 @@ https://templatemo.com/tm-568-digimedia
                         </div>
                       </div>
                     </div>
-			<form id="myForm">
+		<form id="myForm">
                         <input  type="text" id="name" name="name" placeholder="Your Name" required>
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
 			<input type="number" id="mobileno" name="mobileno" placeholder="Your Mobile No" required>
                         <textarea id="message" name="message" placeholder="Your Message"></textarea>
                         <button type="submit"  class="btn btn3" onclick='SubForm()'>submit</button>
-                    	</form>
+                    </form>
                     </div>
                   </div>
                 </div>
@@ -594,21 +609,6 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
 
 </body>
 </html>
