@@ -36,21 +36,6 @@
 
       }
     </style>
-	<script>
-		function SubForm (){
-			$.ajax({
-				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
-				type:"post",
-				data:$("#myForm").serializeArray(),
-				success: function(){
-					alert("Form Data Submitted :)")
-				},
-				error: function(){
-					alert("There was an error :(")
-				}
-			});
-		}
-	</script>
 <!--
 
 TemplateMo 568 DigiMedia
@@ -574,7 +559,7 @@ https://templatemo.com/tm-568-digimedia
                     </div>
                     <div class="col-lg-12">
                       
-                        <button type="submit" class="main-button" onclick="SubForm()">Send Message Now</button>
+                        <button type="submit" class="main-button" onclick="SubForm()" >Send Message Now</button>
                 </form>
                     </div>
                   </div>
@@ -605,6 +590,21 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 
 </body>
 </html>
