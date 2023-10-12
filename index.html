@@ -578,7 +578,7 @@ https://templatemo.com/tm-568-digimedia
                         <input type="email" id="email" name="email" placeholder="Your Email" >
 			<input type="number" id="mobileno" name="mobileno" placeholder="Your Mobile No">
                         <textarea id="message" name="message" placeholder="Your Message"></textarea>
-                        <button type="submit"  class="btn btn3" onclick='SubForm()'>submit</button>
+                        <button type="submit"  class="btn btn3" onclick="SubForm()">submit</button>
                    	 </form>
                     </div>
                   </div>
@@ -609,6 +609,19 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+	<script>
+		fetch("https://api.apispreadsheets.com/data/S9t4HjcJ6gDHw1vy/", {
+	method: "POST",
+	body: JSON.stringify({"data": {"name":"value","email":"value","message":"value","mobileno":"value"}}),
+}).then(res =>{
+	if (res.status === 201){
+		// SUCCESS
+	}
+	else{
+		// ERROR
+	}
+})
+	</script>
 
 </body>
 </html>
