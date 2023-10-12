@@ -1749,21 +1749,21 @@ contact
 --------------------------------------------- 
 */
 
-.contact-us {
+  .contact-us {
   padding-top: 130px;
 }
 
-.contact-us .section-heading .line-dec {
+  .contact-us .section-heading .line-dec {
   margin: 0 auto;
 }
 
-.contact-us .section-heading {
+  .contact-us .section-heading {
   text-align: center;
   margin-bottom: 80px;
 }
 
 
-form.contact:before {
+form  .contact:before {
   background-image: url(../images/contact-top-right-v2.png);
   position: absolute;
   right: 0;
@@ -1775,14 +1775,14 @@ form.contact:before {
   z-index: 1;
 }
 
-.contact-dec img {
+  .contact-dec img {
   max-width: 224px;
   position: absolute;
   right: 25px;
   top: -242px;
 }
 
-form.contact:after {
+form  .contact:after {
   background-image: url(../images/contact-bottom-right-v2.png);
   position: absolute;
   right: 0;
@@ -1794,7 +1794,7 @@ form.contact:after {
   z-index: 1;
 }
 
-form.contact {
+form  .contact {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   position: relative;
   background-color: #fff;
@@ -1802,7 +1802,7 @@ form.contact {
   text-align: center;
 }
 
-form.contact #map iframe {
+form  .contact #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
@@ -1844,7 +1844,7 @@ form.contact #map iframe {
   color: #fe664e;
 }
 
-form.contact input {
+form  .contact input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -1858,11 +1858,11 @@ form.contact input {
   margin-top: 30px;
 }
 
-form.contact input::placeholder {
+form  .contact input::placeholder {
   color: #aaa;
 }
 
-form.contact textarea {
+form  .contact textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1880,11 +1880,11 @@ form.contact textarea {
   margin-top: 30px;
 }
 
-form.contact textarea::placeholder {
+form  .contact textarea::placeholder {
   color: #aaa;
 }
 
-form.contact button {
+form  .contact button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -1901,7 +1901,7 @@ form.contact button {
   outline: none;
 }
 
-form.contact button:hover {
+form  .contact button:hover {
   background-color: #fe664e!important;
   color: #fff!important;
 }
@@ -1951,7 +1951,7 @@ responsive
 }
 
 @media (max-width: 992px) {
-  form.contact {
+  form  .contact {
     overflow: hidden;
   }
   .header-area .main-nav .logo h4 {
@@ -2011,10 +2011,10 @@ responsive
   .our-portfolio .owl-nav {
     display: none !important;
   }
-  .contact-info {
+    .contact-info {
     margin-top: 60px;
   }
-  form.contact {
+  form  .contact {
     padding: 45px;
   }
 }
@@ -2096,7 +2096,7 @@ responsive
   .about-us .about-item {
     margin-top: 15px;
   }
-  form.contact {
+  form  .contact {
     padding: 30px;
   }
 }
