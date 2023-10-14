@@ -1764,7 +1764,7 @@ contact
 }
 
 
-form#contact:before {
+form#myFrom:before {
   background-image: url(../images/contact-top-right-v3.png);
   position: absolute;
   right: 0;
@@ -1783,7 +1783,7 @@ form#contact:before {
   top: -242px;
 }
 
-form#contact:after {
+form#myFrom:after {
   background-image: url(../images/contact-bottom-right-v3.png);
   position: absolute;
   right: 0;
@@ -1795,7 +1795,7 @@ form#contact:after {
   z-index: 1;
 }
 
-form#contact {
+form#myFrom {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   position: relative;
   background-color: #fff;
@@ -1803,7 +1803,7 @@ form#contact {
   text-align: center;
 }
 
-form#contact #map iframe {
+form#myFrom #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
@@ -1845,7 +1845,7 @@ form#contact #map iframe {
   color: #4da6e7;
 }
 
-form#contact input {
+form#myFrom input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -1859,11 +1859,11 @@ form#contact input {
   margin-top: 30px;
 }
 
-form#contact input::placeholder {
+form#myFrom input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#myFrom textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1881,11 +1881,11 @@ form#contact textarea {
   margin-top: 30px;
 }
 
-form#contact textarea::placeholder {
+form#myFrom textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#myFrom button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -1902,7 +1902,7 @@ form#contact button {
   outline: none;
 }
 
-form#contact button:hover {
+form#myFrom button:hover {
   background-color: #4da6e7!important;
   color: #fff!important;
 }
@@ -1952,7 +1952,7 @@ responsive
 }
 
 @media (max-width: 992px) {
-  form#contact {
+  form#myFrom {
     overflow: hidden;
   }
   .header-area .main-nav .logo h4 {
@@ -2015,7 +2015,7 @@ responsive
   .contact-info {
     margin-top: 60px;
   }
-  form#contact {
+  form#myFrom {
     padding: 45px;
   }
 }
@@ -2097,7 +2097,7 @@ responsive
   .about-us .about-item {
     margin-top: 15px;
   }
-  form#contact {
+  form#myFrom {
     padding: 30px;
   }
 }
