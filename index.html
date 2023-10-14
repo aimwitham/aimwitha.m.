@@ -43,10 +43,10 @@
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					alert("Form Data Submitted :)")
+					window.location.href = "save.html";
 				},
 				error: function(){
-					alert("There was an error :(")
+					window.location.href = "cancel.html";
 				}
 			});
 		}
