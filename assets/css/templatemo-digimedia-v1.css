@@ -1868,7 +1868,7 @@ contact
 }
 
 
-form#contact:before {
+form#myForm:before {
   background-image: url(../images/contact-top-right.png);
   position: absolute;
   right: 0;
@@ -1887,7 +1887,7 @@ form#contact:before {
   top: -242px;
 }
 
-form#contact:after {
+form#myForm:after {
   background-image: url(../images/contact-bottom-right.png);
   position: absolute;
   right: 0;
@@ -1899,7 +1899,7 @@ form#contact:after {
   z-index: 1;
 }
 
-form#contact {
+form#myForm {
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   position: relative;
   background-color: #fff;
@@ -1907,7 +1907,7 @@ form#contact {
   text-align: center;
 }
 
-form#contact #map iframe {
+form#myForm #map iframe {
   border-top-left-radius: 23px;
   border-bottom-left-radius: 23px;
   margin-bottom: -7px;
@@ -1949,7 +1949,7 @@ form#contact #map iframe {
   color: #fa65b1;
 }
 
-form#contact input {
+form#myForm input {
   width: 100%;
   height: 46px;
   background-color: transparent;
@@ -1963,11 +1963,11 @@ form#contact input {
   margin-top: 30px;
 }
 
-form#contact input::placeholder {
+form#myForm input::placeholder {
   color: #aaa;
 }
 
-form#contact textarea {
+form#myForm textarea {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -1985,11 +1985,11 @@ form#contact textarea {
   margin-top: 30px;
 }
 
-form#contact textarea::placeholder {
+form#myForm textarea::placeholder {
   color: #aaa;
 }
 
-form#contact button {
+form#myForm button {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
@@ -2006,7 +2006,7 @@ form#contact button {
   outline: none;
 }
 
-form#contact button:hover {
+form#myForm button:hover {
   background-color: #fa65b1!important;
   color: #fff!important;
 }
@@ -2059,7 +2059,7 @@ responsive
   .intro-banner:before {
     display: none;
   } 
-  form#contact {
+  form#myForm {
     overflow: hidden;
   }
   .header-area .main-nav .logo h4 {
@@ -2122,7 +2122,7 @@ responsive
   .contact-info {
     margin-top: 60px;
   }
-  form#contact {
+  form#myForm {
     padding: 45px;
   }
 }
@@ -2204,7 +2204,7 @@ responsive
   .about-us .about-item {
     margin-top: 15px;
   }
-  form#contact {
+  form#myForm {
     padding: 30px;
   }
 }
