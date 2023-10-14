@@ -43,10 +43,10 @@
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					window.location.href = "save.html";
+					window.location.replace = "save.html";
 				},
 				error: function(){
-					window.location.href = "cancel.html";
+					window.location.replace = "cancel.html";
 				}
 			});
 		}
