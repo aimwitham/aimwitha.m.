@@ -104,7 +104,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #030101;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -985,17 +985,19 @@ Banner Style
 */
 
 .main-banner {
+  background-image: url(../images/0Z9A1327.JPG);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   padding: 226px 0px 120px 0px;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 
 .main-banner:after {
   content: '';
-  background-image: url(../images/slider-left-dec.jpg);
+ 
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -1007,7 +1009,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/slider-right-dec.jpg);
+
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -1376,7 +1378,7 @@ Services Style
 
 .services .icon img {
   margin-bottom: 10px;
-  max-width: 60px;
+  max-width: 100px;
   min-width: 60px;
 }
 
@@ -1478,11 +1480,13 @@ Services Style
   color: #fa65b1 !important;
 }
 
+
 .services .left-text p {
   margin-bottom: 30px;
 }
 
 .nacc .ticks-list span {
+
   display: inline-block;
   opacity: 1;
   margin-right: 45px;
@@ -1608,9 +1612,10 @@ Portfolio
 }
 
 .our-portfolio .container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
   position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
+
   z-index: 2;
 }
 
@@ -2128,6 +2133,13 @@ responsive
 }
 
 @media (max-width: 767px) {
+  
+.our-portfolio .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 2;
+}
   .header-area .main-nav .logo h4 {
     font-size: 30px;
   }
@@ -2151,6 +2163,7 @@ responsive
     display: inline-block;
   }
   .services .naccs .menu div .thumb {
+    justify-content: space-between;
     padding: 5px;
   }
   .services .icon img {
