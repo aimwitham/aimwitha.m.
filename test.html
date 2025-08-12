@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews Carousel</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #fff;
+        padding: 0;
+    }
+
+    .reviews-section {
+        text-align: center;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+
+    .reviews-section h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .reviews-section p {
+        color: #777;
+        max-width: 600px;
+        margin: 10px auto;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        max-width: 1000px;
+        margin: auto;
+        background-color: aqua;
+        position: relative;
+    }
+
+    .reviews-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .review-card {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 10px;
+        background: #111;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .review-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .stars {
+        color: orange;
+        font-size: 14px;
+    }
+
+    .review-date {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .review-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+</style>
+</head>
+<body>
+
+<section class="reviews-section">
+    <h2>They all love our food</h2>
+    <p>Consectetur adipiscing elit elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.<br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="carousel-container">
+        <div class="reviews-wrapper" id="carousel">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">L</div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-date">12/12/2018 via Google</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    We love BBQ Place, go there often. Food is good, friendly staff and large menu to choose from. Good beer selection.
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar" style="background: gray;">
+                        <img src="https://via.placeholder.com/40" alt="avatar" style="border-radius:50%;">
+                    </div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-date">12/14/2018 via Google</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Great food and friendly employees. Loved the pizza. Good beer selection. In SD to visit our son in the Marine Corps.
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">L</div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-date">12/16/2018 via Google</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Though the restaurant was crowded, we were seated right away. Our waitress Sarah B. was perfect! Always nice, always there when we needed her.
+                </div>
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">M</div>
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <div class="review-date">12/18/2018 via Google</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    Amazing food, cozy atmosphere, and wonderful service. We will definitely be back again!
+                </div>
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar">Jd</div>
+                    <div>
+                        <div class="stars">★★★★☆</div>
+                        <div class="review-date">12/20/2018 via Google</div>
+                    </div>
+                </div>
+                <div class="review-text">
+                    The food was great but the wait time was a bit long. Still worth the visit.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    let currentIndex = 0;
+    const carousel = document.getElementById("carousel");
+    const totalCards = document.querySelectorAll(".review-card").length;
+    const visibleCards = 3;
+
+    function moveCarousel() {
+        currentIndex++;
+        if (currentIndex > totalCards - visibleCards) {
+            currentIndex = 0;
+        }
+        carousel.style.transform = `translateX(-${currentIndex * (100 / visibleCards)}%)`;
+    }
+
+    setInterval(moveCarousel, 3000); // scroll every 3 sec
+</script>
+
+</body>
+</html>

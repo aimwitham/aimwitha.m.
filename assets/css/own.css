@@ -1,0 +1,182 @@
+#main{
+    margin-top: 100px;
+    height: 90vh;
+    width: 100%;
+}
+#headname{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    width: 100%;
+}
+#gallary{
+    margin: auto;
+    height: 100vh;
+    width: 80%;
+    
+}
+#headtitle{
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+   
+    width: 100%;    
+}
+#GalPhotos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    
+    height: 80vh;
+    width: 80%;
+}
+#Photosdiv{
+    margin: auto;
+    height: 70vh;
+    width: 30%;
+}
+#Pimg{
+    height: 65vh;
+    width: 100%;
+    background-color: rgb(34, 167, 167);
+}
+#Pimg img{
+    height: 100%;
+    background-color: blanchedalmond;
+}
+#descPhoto{
+    padding: 10px;
+    text-align: center;
+}
+#descPhoto p{
+    font-weight: 500;
+    word-spacing: 2px;
+    color: rgba(94, 93, 93, 0.874);
+}
+#feedbacksec{
+background: #eee;
+  padding: 50px 0;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 1000px;
+
+}
+#feedbackimg{
+    background-color: blue;
+    height: 50px;
+}
+#fedbackimg{
+    background-color: black;
+    height: 35vh;
+    width: 100%;
+}
+
+.reviews-section {
+        text-align: center;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+
+    .reviews-section h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .reviews-section p {
+        color: #777;
+        max-width: 600px;
+        margin: 10px auto;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        max-width: 1000px;
+        margin: auto;
+        position: relative;
+    }
+
+    .reviews-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .review-card {
+        flex: 0 0 calc(33.333% - 20px);
+        margin: 10px;
+        background: #111;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .review-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .stars {
+        color: orange;
+        font-size: 14px;
+    }
+
+    .review-date {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .review-text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+
+
+
+@media (max-width: 700px) {
+    #GalPhotos{
+        display: block;
+    }
+    #Photosdiv{
+        width: 100%;
+    }
+}
+
+:root { --duration: 3s; }
+
+.carousel { display: flex; gap: 50px; max-width: 1100px; margin: 40px auto; }
+
+.slide { flex: 1; min-height: 400px; display: flex; justify-content: center; border-radius: 16px; color: #fff; font: 600 1.25rem/1.2 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans"; box-shadow: 0 20px 40px -12px rgba(0,0,0,.35); }
+
+/* Pretty gradients */ .s1 { background: linear-gradient(135deg, #6d28d9, #8b5cf6); animation: order1 var(--duration) infinite steps(1, end); } .s2 { background: linear-gradient(135deg, #7e22ce, #a855f7); animation: order2 var(--duration) infinite steps(1, end); } .s3 { background: linear-gradient(135deg, #a21caf, #d946ef); animation: order3 var(--duration) infinite steps(1, end); }
+
+/* Every 1s, make the first become last by reordering via keyframes */ @keyframes order1 { 0%, 33.333% { order: 1; } 33.334%, 66.666% { order: 3; } 66.667%, 100% { order: 2; } } @keyframes order2 { 0%, 33.333% { order: 2; } 33.334%, 66.666% { order: 1; } 66.667%, 100% { order: 3; } } @keyframes order3 { 0%, 33.333% { order: 3; } 33.334%, 66.666% { order: 2; } 66.667%, 100% { order: 1; } }
+
+
+
+@media (max-width: 700px) {
+    .carousel{
+        display: block;
+    }
+    .carousel-container{
+        max-width: 500px;
+    }
+    .review-card{
+        min-width: 80%;
+    }
+}
