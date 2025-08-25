@@ -237,7 +237,8 @@ intro
 
 .intro-banner {
   text-align: center;
-  padding-top: 200px;margin-bottom: 100px;
+  padding-top: 200px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -580,7 +581,7 @@ header
 .header-area .main-nav .nav li.submenu ul li a {
   opacity: 1;
   display: block;
-  background: #d70c0c;
+ 
   color: #2a2a2a!important;
   padding-left: 20px;
   height: 40px;
@@ -624,7 +625,6 @@ header
   z-index: 99;
   right: 40px;
   display: none;
-  background-color: #030101;
 }
 
 .background-header .main-nav .menu-trigger {
@@ -659,7 +659,6 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e31b1b;
   display: block;
   position: absolute;
   width: 30px;
