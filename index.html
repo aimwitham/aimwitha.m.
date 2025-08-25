@@ -15,7 +15,13 @@
     crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW46NGNZ9T"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
- 
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SW46NGNZ9T');
+  </script>
 
   <title>Cousin's Production</title>
 
@@ -33,7 +39,7 @@
     .btn1 {
       margin-top: 10px;
       border-radius: 10px;
-      background-color: palevioletred;
+      background-color: #FF850F;
       padding: 7px 15px;
       border: none;
 
@@ -41,9 +47,10 @@
 
     #btnWm {
       padding: 10px;
-      background-color: palevioletred;
+      background-color: #f77d0270;
       border: none;
       font-weight: 500;
+      border: 2px solid #FF850F;
       border-radius: 7px;
       color: aliceblue;
     }
@@ -124,7 +131,7 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h6 style="font-size:24px; margin-top: 10px;">Cousin's production</h6>
+                    <h6 style="font-size:24px; margin-top: 10px; color: #0303039b;">Cousin's production</h6>
                     <h2>Film & Photography</h2>
                     <p style="font-size:x-large;color: black;">Welcome to Cousins Production, where every love story is
                       told like a film, and every frame speaks from the heart.</p>
@@ -221,7 +228,8 @@
                     </div>
                     <div class="last-thumb">
                       <div class="thumb">
-                        Comercials
+                        Comercial <br>
+                        Shoot
                       </div>
                     </div>
                   </div>
@@ -264,7 +272,7 @@
                                   to be felt, not just seen — a timeless keepsake that lets you relive your day exactly
                                   as it was, long after the last dance.</p>
                               </div>
-                              <a href=""><button id="btnWm">Watch More</button></a>
+                              <a href="WeddingPhotography.html"><button id="btnWm">Watch More</button></a>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
@@ -572,6 +580,22 @@
         alert("Something went wrong. Please try again.");
       });
   }
+</script>
+<script>
+    let currentIndex = 0;
+    const carousel = document.getElementById("carousel");
+    const totalCards = document.querySelectorAll(".review-card").length;
+    const visibleCards = 3;
+
+    function moveCarousel() {
+        currentIndex++;
+        if (currentIndex > totalCards - visibleCards) {
+            currentIndex = 0;
+        }
+        carousel.style.transform = `translateX(-${currentIndex * (100 / visibleCards)}%)`;
+    }
+
+    setInterval(moveCarousel, 3000); // scroll every 3 sec
 </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
