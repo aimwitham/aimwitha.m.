@@ -39,7 +39,7 @@
     .btn1 {
       margin-top: 10px;
       border-radius: 10px;
-      background-color: palevioletred;
+      background-color: #FF850F;
       padding: 7px 15px;
       border: none;
 
@@ -47,18 +47,29 @@
 
     #btnWm {
       padding: 10px;
-      background-color: palevioletred;
+      background-color: #f77d0270;
       border: none;
       font-weight: 500;
+      border: 2px solid #FF850F;
       border-radius: 7px;
       color: aliceblue;
     }
 
     #FirstDiv {
-      position: absolute;
-      margin-left: 40%;
-      margin-top: 25%;
+      margin-left: 50%;
     }
+    @media (max-width: 767px){
+      #FirstDiv {
+        margin: auto;
+        
+      }
+      #nottext{
+        display: none;
+      }
+      #btnbooknow{
+        display: none;
+      }
+    }       
   </style>
   
   <!--
@@ -126,21 +137,21 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="row">
-            <div class="col-lg-6 align-self-center" id="FirstDiv">
+            <div class="col-lg-6" id="FirstDiv">
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h6 style="font-size:24px; margin-top: 10px;">Cousin's production</h6>
+                    <h6 style="font-size:24px; color: #0303039b;">Cousin's production</h6>
                     <h2>Film & Photography</h2>
                     <p style="font-size:x-large;color: black;">Welcome to Cousins Production, where every love story is
                       told like a film, and every frame speaks from the heart.</p>
-                    <h4>"We don’t just shoot videos — we craft cinematic experiences that turn your wedding,
+                    <h4 id="nottext"> "We don’t just shoot videos — we craft cinematic experiences that turn your wedding,
                       pre-wedding, or special event into a timeless story. From the raw emotions to the grand
                       celebrations, we capture every moment with elegance, creativity, and soul."</h3>
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section">
-                      <a href="https://forms.gle/8cPAwrpGc8qzKuQg6" style="margin-top: 15px;">Book Now !</a>
+                      <a href="https://forms.gle/8cPAwrpGc8qzKuQg6" id="btnbooknow" style="margin-top: 15px;">Book Now !</a>
                     </div>
                   </div>
                 </div>
@@ -208,13 +219,13 @@
                   <div class="menu">
                     <div class="first-thumb active">
                       <div class="thumb">
-                        Portrait Photography
+                        Wedding Photography
                       </div>
                     </div>
                     <div>
                       <div class="thumb">
                         
-                        Wedding Photography
+                        Product Photography
                       </div>
                     </div>
                     
@@ -227,7 +238,8 @@
                     </div>
                     <div class="last-thumb">
                       <div class="thumb">
-                        Comercials
+                        Comercial <br>
+                        Shoot
                       </div>
                     </div>
                   </div>
@@ -240,13 +252,35 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Behind The story Of & Portrait</h4>
-                                <p>Every portrait tells more than a face — it whispers a chapter of a life, a feeling
-                                  frozen in time. In this frame, light and shadow dance to reveal not just how someone
-                                  looks, but who they are in the quiet moments in between.</p>
+                                <h4>Behind the wedding & photos</h4>
+                                <p>We believe a wedding is not just an event — it’s a living story of love, family, and
+                                  promises. Through our lenses, we capture the stolen glances, the laughter that echoes,
+                                  the happy tears, and the unspoken moments in between. Every frame we create is meant
+                                  to be felt, not just seen — a timeless keepsake that lets you relive your day exactly
+                                  as it was, long after the last dance.</p>
+                              </div>
+                              <a href="WeddingPhotography.html"><button id="btnWm">See Photos</button></a>
+                            </div>
+                            <div class="col-lg-6 align-self-center">
+                              <div class="right-image">
+                                <img src="assets/images/0Z9A5075.JPG" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                              <div class="left-text">
+                                <h4>Behind The story Of & Product</h4>
+                                <p>Product photography is the art of capturing products in a way that highlights their features, quality, and value. It goes beyond just taking pictures — it tells a visual story that attracts customers and builds trust. High-quality product photos are essential for e-commerce stores, social media, catalogs, and advertisements, as they directly influence buying decisions.</p>
 
                               </div>
-                              <a href="PortaitPhotography.html"><button id="btnWm">Watch More</button></a>
+                              <a href="PortaitPhotography.html"><button id="btnWm">See Photos</button></a>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
@@ -263,31 +297,6 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Behind the wedding & photos</h4>
-                                <p>We believe a wedding is not just an event — it’s a living story of love, family, and
-                                  promises. Through our lenses, we capture the stolen glances, the laughter that echoes,
-                                  the happy tears, and the unspoken moments in between. Every frame we create is meant
-                                  to be felt, not just seen — a timeless keepsake that lets you relive your day exactly
-                                  as it was, long after the last dance.</p>
-                              </div>
-                              <a href=""><button id="btnWm">Watch More</button></a>
-                            </div>
-                            <div class="col-lg-6 align-self-center">
-                              <div class="right-image">
-                                <img src="assets/images/0Z9A5075.JPG" alt="">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    
-                    <li>
-                      <div>
-                        <div class="thumb">
-                          <div class="row">
-                            <div class="col-lg-6 align-self-center">
-                              <div class="left-text">
                                 <h4>Behind The & Post Production</h4>
                                 <p>The magic doesn’t end when the camera stops rolling — that’s where post-production
                                   brings your memories to life. From carefully selecting the perfect frames to crafting
@@ -296,7 +305,7 @@
                                   into a seamless, emotional experience that feels just as real as the day it happened.
                                 </p>
                               </div>
-                              <a href=""><button id="btnWm">Watch More</button></a>
+                              <a href=""><button id="btnWm">See Photos</button></a>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
@@ -320,7 +329,7 @@
                                   edit, we focus on storytelling, brand identity, and attention to detail, ensuring
                                   every shot reflects your vision and leaves a lasting impression.</p>
                               </div>
-                              <a href=""><button id="btnWm">Watch More</button></a>
+                              <a href=""><button id="btnWm">See Photos</button></a>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
@@ -367,27 +376,28 @@
                     <div class="avatar">L</div>
                     <div>
                         <div class="stars">★★★★★</div>
-                        <div class="review-date">12/12/2018 via Google</div>
+                        <div class="review-date">12/12/2024 via Google</div>
                     </div>
                 </div>
                 <div class="review-text">
-                    We love BBQ Place, go there often. Food is good, friendly staff and large menu to choose from. Good beer selection.
+                    Cousins Production beautifully captured every detail of our big day. The emotions, the colors, the joy—it’s all frozen in time with such elegance. Looking back at the photos feels like reliving the best day of our lives. We couldn’t have asked for a better team!
                 </div>
             </div>
 
             <!-- Review 2 -->
             <div class="review-card">
                 <div class="review-header">
-                    <div class="avatar" style="background: gray;">
-                        <img src="https://via.placeholder.com/40" alt="avatar" style="border-radius:50%;">
+                    <div class="avatar" >d
+            <!--            <img src="https://via.placeholder.com/40" alt="avatar" style="border-radius:50%;">-->
                     </div>
                     <div>
                         <div class="stars">★★★★★</div>
-                        <div class="review-date">12/14/2018 via Google</div>
+                        <div class="review-date">12/14/2023 via Google</div>
                     </div>
                 </div>
                 <div class="review-text">
-                    Great food and friendly employees. Loved the pizza. Good beer selection. In SD to visit our son in the Marine Corps.
+                    
+                     It was emotional, cinematic, and absolutely magical. The storytelling, the background music, and the editing were all spot on. Cousins Production made our love story feel like a movie—one we’ll watch and cherish forever
                 </div>
             </div>
 
@@ -397,11 +407,11 @@
                     <div class="avatar">L</div>
                     <div>
                         <div class="stars">★★★★★</div>
-                        <div class="review-date">12/16/2018 via Google</div>
+                        <div class="review-date">12/16/2024 via Google</div>
                     </div>
                 </div>
                 <div class="review-text">
-                    Though the restaurant was crowded, we were seated right away. Our waitress Sarah B. was perfect! Always nice, always there when we needed her.
+                    They turned our pre-wedding shoot into a beautiful love story! The creativity and comfort they brought to the shoot made it fun and unforgettable. Every shot was planned to perfection, and the final video blew us away. Highly recommended for anyone wanting something truly special.
                 </div>
             </div>
 
@@ -411,11 +421,11 @@
                     <div class="avatar">M</div>
                     <div>
                         <div class="stars">★★★★★</div>
-                        <div class="review-date">12/18/2018 via Google</div>
+                        <div class="review-date">12/18/2024 via Google</div>
                     </div>
                 </div>
                 <div class="review-text">
-                    Amazing food, cozy atmosphere, and wonderful service. We will definitely be back again!
+                    Professional, punctual, and super creative. Cousins Production handled our brand photoshoot with complete precision. From lighting to posing, everything was flawless. The final images were high-quality and exactly what we needed for our campaign. Will definitely work with them again.
                 </div>
             </div>
 
@@ -425,11 +435,11 @@
                     <div class="avatar">Jd</div>
                     <div>
                         <div class="stars">★★★★☆</div>
-                        <div class="review-date">12/20/2018 via Google</div>
+                        <div class="review-date">12/20/2023 via Google</div>
                     </div>
                 </div>
                 <div class="review-text">
-                    The food was great but the wait time was a bit long. Still worth the visit.
+                    Cousins Production delivered a fantastic ad film for our product launch. They understood our brand, wrote a great concept, and executed it flawlessly. The visuals were crisp, the direction was tight, and the result helped us attract real attention online. Absolutely thrilled with the outcome!.
                 </div>
             </div>
         </div>
@@ -474,7 +484,7 @@
                       <div class="info-post">
                         <div class="icon">
                           <img src="assets/images/phone-icon.png" alt="">
-                          <a href="#">+91 6351007951</a>
+                          <a href="callto:6351007951">+91 6351007951</a>
                         </div>
                       </div>
                     </div>
@@ -482,7 +492,7 @@
                       <div class="info-post">
                         <div class="icon">
                           <img src="assets/images/email-icon.png" alt="">
-                          <a href="#">coproduction
+                          <a href="mailto:coproductionhouseindia@email.com">coproduction
                             houseindia@email.com</a>
                         </div>
                       </div>
@@ -578,6 +588,22 @@
         alert("Something went wrong. Please try again.");
       });
   }
+</script>
+<script>
+    let currentIndex = 0;
+    const carousel = document.getElementById("carousel");
+    const totalCards = document.querySelectorAll(".review-card").length;
+    const visibleCards = 3;
+
+    function moveCarousel() {
+        currentIndex++;
+        if (currentIndex > totalCards - visibleCards) {
+            currentIndex = 0;
+        }
+        carousel.style.transform = `translateX(-${currentIndex * (100 / visibleCards)}%)`;
+    }
+
+    setInterval(moveCarousel, 3000); // scroll every 3 sec
 </script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

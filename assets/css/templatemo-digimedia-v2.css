@@ -191,7 +191,7 @@ body {
 }
 
 .section-heading h4 {
-  color: #2a2a2a;
+  color: #000000;
   font-size: 35px;
   font-weight: 700;
   text-transform: capitalize;
@@ -212,8 +212,8 @@ body {
 .border-first-button a {
   display: inline-block !important;
   padding: 10px 20px !important;
-  color: #fe664e !important;
-  border: 1px solid #fe664e !important;
+  color: #dbfe4e !important;
+  border: 1px solid #f58b56 !important;
   border-radius: 23px;
   font-weight: 500 !important;
   letter-spacing: 0.3px !important;
@@ -221,7 +221,7 @@ body {
 }
 
 .border-first-button a:hover {
-  background-color: #fe664e;
+  background-color: #86fe4e;
   color: #fff !important;
 }
 
